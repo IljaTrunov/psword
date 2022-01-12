@@ -30,7 +30,7 @@ def newUser():
     else:
         createPassw=input("Create password: ")
         users.append(createLogin)
-        passws.append(createPassw)        
+        passws.append(createPassw)
         print("A new user has registered!")
         print("Login: ", createLogin)
         print("Password: *********")
@@ -44,7 +44,7 @@ def oldUser():
     else:
         print("User doesn't exist or wrong password!")
 while status != "q":
-    repeat()
+      repeat()
 
     #alpha=digit=upper=special=0
 #ls= list(str0)
@@ -65,13 +65,6 @@ while status != "q":
 #return passok
 
 
-
-
-
-
-
-
-
 import module1
 users=["aboba228","eestiInimene","okaspodaini"]
 passws=["aboba2005","eesti1945",""]
@@ -90,4 +83,3 @@ while 1:
 	elif status=="q":
 		print("Bye!")
 		quit
-	
