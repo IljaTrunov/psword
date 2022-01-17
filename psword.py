@@ -83,3 +83,32 @@ while 1:
 	elif status=="q":
 		print("Bye!")
 		quit
+from toofailidega import *
+users=[]
+passwords=[]
+users=failist_lugemine("users.txt", users)
+print(users)
+passwords=failist_lugemine("passwords.txt", passwords)
+print(passwords)
+
+def failist_lugemine(f:str,l:list):
+    """info failist f listisse l 
+    """
+    fail=open(f,"r")
+    for line in fail:
+        l.append(rida.strip())
+    fail.close()
+    return l
+def failisse_salvestamine():
+    """Loetelu salvestame failis
+    """
+    fail=open(f,'w')
+    for el in l:
+        fail.write(el+'\n')
+    fail.close()
+def rida_salvestamine(f:str,rida:str):
+    """üks sõna või lause(rida) savestame failisse
+    """
+    fail=open(f,'a')
+    fail.write(rida+'\n')
+    fail.close()
