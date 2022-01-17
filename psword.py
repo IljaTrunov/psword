@@ -112,3 +112,10 @@ def rida_salvestamine(f:str,rida:str):
     fail=open(f,'a')
     fail.write(rida+'\n')
     fail.close()
+def loe_failist(file:str)->list:
+	"""loeme failist read ja lisame järjendisse
+	:param str file: faili nimetus
+	"""
+	fail=open(file,'r',encoding="utf-8-sig"
+	mas=[]
+	
